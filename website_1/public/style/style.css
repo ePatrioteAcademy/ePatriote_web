@@ -185,6 +185,7 @@ header {
     height: 8px;
     background-color: var(--whiteColor);
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .citation_indicator_item_yes {
@@ -210,6 +211,7 @@ header {
     color: var(--whiteColor);
     cursor: pointer;
     overflow: hidden;
+
 }
 
 .btn1 button:hover {
@@ -236,6 +238,21 @@ header {
 button span {
     position: relative;
     z-index: 1;
+}
+/*==== Animate banner header ====*/
+@keyframes pop-in-description {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate-pop-in-description {
+    animation: pop-in-description .6s ease-out forwards;
 }
 
 /*==== Banner footer ====*/
@@ -274,3 +291,18 @@ button span {
     font-style: italic;
 }
 
+/*==== Animate banner footer ====*/
+@keyframes pop-in-footer {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem) scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate-pop-in-footer {
+    animation: pop-in-footer .6s ease-out forwards;
+}

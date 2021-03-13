@@ -19,6 +19,7 @@ function changeCitation (event, index) {
 
     citationIndicatorItems[index].classList.add('citation_indicator_item_yes');
     currentCitationIndicatorItem = citationIndicatorItems[index]
+
 }
 
 citationIndicatorItems.forEach((item, index) => {
